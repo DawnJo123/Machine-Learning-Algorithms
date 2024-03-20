@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 #import data
-data = pd.read_csv("datasets/spam.csv")
+data = pd.read_csv("Naive Bayes Classifier\dataset\spam.csv")
 
 #Creating a new column called " Spam " to indicate spam as 1 and ham as 0
 data['Spam']= data['Category'].apply(lambda x:1 if x=='spam' else 0)
